@@ -22,8 +22,8 @@ It also provides personalized study recommendations, performance analytics, and 
 - **Performance Analytics:** Visualize academic progress through interactive charts.
 - **Subject-wise Analysis:** Identify academic strengths and weaknesses.
 - **Personalized Suggestions:** Receive recommendations to improve academic performance.
-- **Prediction Confidence:** View model confidence and probability scores for each category.
-- **What-if Analysis:** Understand how improving individual academic factors may affect predicted performance.
+- **Prediction Confidence:** View model confidence and probability scores.
+- **What-if Analysis:** Understand how changes in academic factors may affect predicted performance.
 
 ### 👩‍🏫 Teacher Features
 - **Teacher Dashboard:** Monitor overall class performance.
@@ -62,9 +62,9 @@ It also provides personalized study recommendations, performance analytics, and 
 
 ## 🧠 How the System Works
 
-1. **Student Input:** Students enter their academic information, including attendance, internal marks, study hours, and assignment scores.
-2. **Data Processing:** The backend validates and processes the submitted information.
-3. **Machine Learning Prediction:** The trained ML model analyzes the academic data.
+1. **Student Input:** Students enter academic information, including attendance, internal marks, study hours, and assignment scores.
+2. **Data Processing:** The backend validates and processes submitted information.
+3. **Machine Learning Prediction:** The trained ML model analyzes academic data.
 4. **Performance Classification:** The system predicts the student's likely performance category.
 5. **Result Analysis:** Students receive prediction confidence, category probabilities, and factors affecting performance.
 6. **Personalized Recommendations:** The system provides suggestions to help students improve.
@@ -82,7 +82,7 @@ EduPredict compares three classification algorithms:
 | Random Forest | Combines multiple decision trees for prediction |
 | Logistic Regression | Classifies students into performance categories |
 
-The system evaluates the models using cross-validation and selects the best-performing model based on macro F1-score.
+The system evaluates models using cross-validation and selects the best-performing model based on macro F1-score.
 
 **Note:** The bundled model uses simulated student data for demonstration. Its evaluation metrics should not be interpreted as real-world student performance accuracy.
 
@@ -136,8 +136,6 @@ EduPredict/
 
 ## ⚙️ Installation and Setup
 
-Follow these steps to run EduPredict locally.
-
 ### Prerequisites
 
 Install the following before running the project:
@@ -150,13 +148,13 @@ Install the following before running the project:
 ### 1. Clone the Repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/aakanksha11-03/edupredict.git
 ```
 
-Navigate into the project:
+Navigate into the repository:
 
 ```bash
-cd YOUR_REPOSITORY_NAME
+cd edupredict
 ```
 
 ### 2. Backend Setup
@@ -197,7 +195,7 @@ Start the Flask server:
 python app.py
 ```
 
-Backend will run at:
+Backend URL:
 
 ```text
 http://127.0.0.1:5000
@@ -223,13 +221,13 @@ Start the React development server:
 npm run dev
 ```
 
-Frontend will run at:
+Frontend URL:
 
 ```text
 http://localhost:5173
 ```
 
-Open the URL in your browser to access EduPredict.
+Open the frontend URL in your browser to access EduPredict.
 
 ---
 
@@ -253,7 +251,9 @@ After successfully executing the demo seed command, use the following credential
 | Password | Student@123 |
 | Role | Student |
 
-Additional demo student accounts are available from student2 to student8 using the same password: `Student@123`.
+Additional demo student accounts are available from `student2` to `student8`, using the same password: `Student@123`.
+
+**Security Note:** These are demonstration credentials only. Do not use them in production environments.
 
 ---
 
@@ -300,4 +300,28 @@ Additional demo student accounts are available from student2 to student8 using t
 
 ## ⚠️ Responsible Use
 
-EduPredict is an academic support
+EduPredict is an academic support and prediction tool intended to assist students and teachers in identifying potential areas for improvement.
+
+- Predictions are estimates and should not be treated as guaranteed academic outcomes.
+- Model performance is based on simulated demonstration data.
+- Predictions should not be used as the sole basis for academic decisions.
+- Student information should be handled securely and responsibly.
+- Teachers should consider individual circumstances before making decisions based on predicted results.
+
+---
+
+## 👩‍💻 Developed By
+
+**Aakanksha Tiwari**
+
+Master of Computer Applications (MCA)
+
+**Project:** EduPredict – Student Performance Prediction & Academic Improvement System
+
+**GitHub:** https://github.com/aakanksha11-03
+
+---
+
+⭐ If you find this project interesting, consider giving the repository a star!
+
+**Thank you for visiting EduPredict!**
